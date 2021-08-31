@@ -6,17 +6,17 @@
 | `ocr*.sh` | <ul><li>maim</li><li>tesseract</li><li>xclip</li></ul> | Japanese OCR. |
 | `screenshot.sh` | <ul><li>maim</li><li>xclip</li></ul> | Take screenshots. |
 
+Both `audiorec.sh` and `screenshot.sh` work with Anki. Recorded audio or
+screenshot can be pasted into Anki.
+
 ## Usage
 
 ```
 chmod +x script.sh
 ```
 
-0. Edit script configuration to your liking.
-1. Bind to the desired key in your WM or DE.
+1. Edit script configuration to your liking.
+2. Bind to the desired key in your WM or DE.
 
 [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) is recommended
 to be used with the OCR scripts.
-
-Both `audiorec.sh` and `screenshot.sh` work with Anki. Recorded audio or
-screenshot can be pasted into Anki.
