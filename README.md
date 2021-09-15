@@ -5,6 +5,8 @@
 | `dsymbols.sh` | <ul><li>dmenu</li><li>xclip</li></ul> | Get symbols (unicode symbols, emoji, kaomoji, etc.) from dmenu prompt. Can also be used with words. |
 | `ocr*.sh` | <ul><li>maim</li><li>tesseract</li><li>xclip</li></ul> | Japanese OCR. |
 | `screenshot.sh` | <ul><li>maim</li><li>xclip</li></ul> | Take screenshots. |
+| `yomi.sh` | <ul><li>libnotify</li><li>xclip</li></ul> | Search downloaded Yomichan audio offline. |
+| `ytclip.sh` | <ul><li>youtube-dl</li><li>xclip</li><li>ffmpeg</li></ul> | Make clips from youtube videos. |
 
 Both `audiorec.sh` and `screenshot.sh` work with Anki. Recorded audio or
 screenshot can be pasted into Anki.
@@ -13,6 +15,12 @@ screenshot can be pasted into Anki.
 
 ```
 chmod +x script.sh
+```
+
+Install all dependencies on Arch-based distributions:
+
+```
+pacman -S ffmpeg libnotify xclip dmenu maim tesseract youtube-dl
 ```
 
 1. Edit script configuration to your liking.
