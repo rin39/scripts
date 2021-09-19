@@ -21,5 +21,6 @@ then
 	notify-send "Done! $filename recorded!"
 else
 	notify-send "Recording audio..."
-	ffmpeg -f pulse -i default -ac 2 -c:a libopus -b:a 96K -y "$TEMPFILE"
+	# With -f pulse it won't respect default source using PipeWire.
+	ffmpeg -f alsa -i default -ac 2 -c:a libopus -b:a 96K -y "$TEMPFILE"
 fi
