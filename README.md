@@ -4,6 +4,7 @@
 | `dedit.sh` | <ul><li>dmenu</li></ul> | Dmenu prompt to edit text file from defined directory. |
 | `dsymbols.sh` | <ul><li>dmenu</li><li>xclip</li></ul> | Get symbols (unicode symbols, emoji, kaomoji, etc.) from dmenu prompt. Can also be used with words. |
 | `ocr*.sh` | <ul><li>maim</li><li>tesseract</li><li>xclip</li></ul> | Japanese OCR. |
+| `paswitch.sh` | <ul><li>dmenu</li><br><li>pipewire</li><li>pipewire-alsa</li><li>pipewire-pulse</li>**or**<li>pulseaudio</li></ul> | Switch default sink and source using dmenu. |
 | `screenshot.sh` | <ul><li>maim</li><li>xclip</li></ul> | Take screenshots. |
 | `yomi.sh` | <ul><li>libnotify</li><li>xclip</li></ul> | Search downloaded Yomichan audio offline. |
 | `ytclip.sh` | <ul><li>youtube-dl</li><li>xclip</li><li>ffmpeg</li></ul> | Make clips from youtube videos. |
@@ -17,10 +18,20 @@ screenshot can be pasted into Anki.
 chmod +x script.sh
 ```
 
+Then move the script to the $PATH
+
 Install all dependencies on Arch-based distributions:
 
 ```
 pacman -S ffmpeg libnotify xclip dmenu maim tesseract youtube-dl
+```
+
+```
+pacman -S pipewire pipewire-alsa pipewire-pulse
+```
+
+```
+pacman -S pulseaudio
 ```
 
 1. Edit script configuration to your liking.

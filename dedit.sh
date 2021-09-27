@@ -14,5 +14,5 @@ file=$(ls -p $DIRECTORY | grep -v / | $DMENU)
 if [ -z "$file" ]; then
   exit 1
 else
-  $TERMINAL -e $EDITOR $DIRECTORY/$file
+  $TERMINAL -e $EDITOR "$DIRECTORY/$file"
 fi

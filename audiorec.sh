@@ -16,7 +16,7 @@ if pgrep -x "ffmpeg" > /dev/null
 then
 	killall ffmpeg
 	filename="$DIRECTORY/$(date +%d-%m_%H-%M-%S).ogg"
-	mv $TEMPFILE $filename
+	mv "$TEMPFILE" "$filename"
 	echo "file://${filename}" | xclip -sel c
 	notify-send "Done! $filename recorded!"
 else
