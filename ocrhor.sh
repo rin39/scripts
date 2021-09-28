@@ -2,7 +2,7 @@
 
 # OCR script for horizontal Japanese text
 
-maim -s |
+maim -su |
 tesseract stdin stdout \
 	-l jpn \
 	-c preserve_interword_spaces=1 \

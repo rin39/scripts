@@ -2,7 +2,7 @@
 
 # OCR script for vertical Japanese text.
 
-maim -s |
+maim -su |
 tesseract stdin stdout \
 	-l jpn_vert \
 	-c preserve_interword_spaces=1 \
